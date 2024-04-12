@@ -1,0 +1,99 @@
+.about__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 4rem;
+}
+
+.about__img {
+    width: 350px;
+    border-radius: 1.5rem;
+    justify-self: center;
+}
+
+.about__subtitle {
+    font-size: var(--tiny-font-size);
+}
+
+.about__title {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    padding: 0 4rem 0 0;
+}
+
+.about__description {
+    padding: 0 4rem 0 0;
+    margin-bottom: var(--mb-1-5);
+    margin-top: var(--mb-1);
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .about__container {
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+    }
+
+    .about__img {
+        width: 300px;
+    }
+
+    .about__box {
+        padding: 0.75rem 0.5rem;
+    }
+
+    .about__data {
+        text-align: center;
+    }
+
+    .about__title {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .about__description {
+        padding-left: 5rem;
+        padding-right: 5rem;
+        margin-bottom: 2rem;
+    }
+  }
+  
+  /* For medium devices */
+  @media screen and (max-width: 576px) {
+    .about__info {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .about__img {
+        width: 250px;
+    }
+
+    .about__title {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .about__description {
+        display: none;
+    }
+
+  }
+  
+  /* For small devices */
+  @media screen and (max-width: 350px) {
+    .about__info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about__img {
+        width: 200px;
+    }
+
+    .about__title {
+        font-size: var(--normal-font-size);
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+  }
