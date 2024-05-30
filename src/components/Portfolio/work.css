@@ -34,7 +34,7 @@
 }
 
 .work__img {
-  width: 295px;
+  width: 400px;
   border-radius: 1rem;
   margin-bottom: var(--mb-1);
 }
@@ -45,6 +45,11 @@
   margin-bottom: var(--mb-0-5);
 }
 
+.work__buttons {
+  display: flex;
+  gap: 1rem;
+}
+
 .work__button {
   width: max-content;
   color: var(--text-color);
@@ -52,6 +57,7 @@
   display: flex;
   align-items: center;
   column-gap: 0.25rem;
+  cursor: pointer;
 }
 
 .work__button-icon {
@@ -63,14 +69,76 @@
   transform: translateX(0.25rem);
 }
 
-/* Active Item Work */
 .active-work {
   background-color: var(--title-color);
   color: var(--container-color);
 }
 
-/*==================== MEDIA QUERIES ====================*/
-/* For large devices */
+/* Modal Styles */
+.qualification__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: var(--z-modal);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.qualification__modal-content {
+  width: 700px;
+  background-color: var(--container-color);
+  padding: 2rem;
+  border-radius: 1rem;
+  position: relative;
+  text-align: center;
+}
+
+.qualification__modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: var(--title-color);
+  cursor: pointer;
+}
+
+.active-modal {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal__title {
+  font-size: var(--large-font-size);
+  margin-bottom: var(--mb-1);
+}
+
+.modal__description {
+  font-size: var(--normal-font-size);
+  color: var(--text-color);
+  text-align: center;
+  letter-spacing: 0.8px;
+  line-height: 1.2;
+}
+
+.tech-icons {
+  display: flex;
+  margin-top: 0.6rem;
+}
+
+.tech-icon {
+  font-size: 1.5rem;
+}
+
+
+/* Media Queries */
 @media screen and (max-width: 992px) {
   .work__container {
     gap: 1.25rem;
@@ -81,15 +149,16 @@
   }
 
   .work__img {
+    width: 360px;
     margin-bottom: 0.75rem;
   }
+  
 
   .work__title {
     margin-bottom: 0.25rem;
   }
 }
 
-/* For medium devices */
 @media screen and (max-width: 768px) {
   .work__container {
     grid-template-columns: max-content;
@@ -104,9 +173,12 @@
   .work__img {
     width: 100%;
   }
+
+  .qualification__modal-content {
+    width: 90%;
+  }
 }
 
-/* For small devices */
 @media screen and (max-width: 350px) {
   .work__item {
     font-size: var(--small-font-size);
@@ -114,5 +186,10 @@
 
   .work__filters {
     column-gap: 0.25rem;
+  }
+
+  .qualification__modal-content {
+    width: 100%;
+    padding: 1.5rem;
   }
 }

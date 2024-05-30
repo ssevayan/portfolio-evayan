@@ -13,7 +13,7 @@ const About = () => {
         <img src={AboutImg} alt="" className="about__img" />
 
         <div className="about__data">
-          <h3 className="about__title">As a web developer with a flair for design, I've honed my skills in UI/UX design out of a commitment to enhancing user satisfaction and creating visually engaging websites.</h3>
+          <h3 className="about__title">As a web developer dedicated to user satisfaction, I've developed strong UI/UX design skills to create visually engaging and user-friendly websites.</h3>
           <p className="about__description">
           While my primary strength lies in developing robust, functional websites and applications, my understanding of design principles guides me to ensure these digital solutions are not only effective but also aesthetically pleasing. My aim is to develop intuitive and smooth websites that elevate the user's online experience.
           </p>
