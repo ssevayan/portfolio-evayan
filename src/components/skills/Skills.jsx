@@ -1,7 +1,7 @@
 import React from "react";
 import "./skills.css";
-import Frontend from "./Frontend";
-import Backend from "./Backend";
+import Frontend from "./developer";
+import Backend from "./designer";
 
 const Skills = () => {
   return (

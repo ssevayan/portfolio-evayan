@@ -26,7 +26,7 @@ const Data = () => {
         <i className='bx bxl-git tech-icon git'></i>
         <i className='bx bxl-bootstrap tech-icon bootstrap'></i>
         <i className='bx bxl-php tech-icon php'></i>
-        <i className='bx bxl-postgresql tech-icon postgresql'></i>
+        {/* <i className='bx bxl-postgresql tech-icon postgresql'></i> */}
         <i className='bx bxl-wordpress tech-icon wordpress'></i>
         <i className='bx bxl-adobe tech-icon adobe'></i>
         <i className='bx bxl-figma tech-icon figma'></i>
