@@ -2,6 +2,7 @@ import Work1 from "../../assets/work1.png";
 import Work2 from "../../assets/work2.png";
 import Work4 from "../../assets/work4.png";
 import Work5 from "../../assets/work5.png";
+import Work6 from "../../assets/work6.png";
 
 export const projectsData = [
   {
@@ -39,7 +40,16 @@ export const projectsData = [
     category: ["web design"],
     description: "My Role: Designed and developed the Cozy Petnest e-commerce website from scratch using WordPress, including all UI/UX graphics and logo design.\n\nDescription: Cozy Petnest is an online pet supply shop offering a variety of high-quality products for pets. \nThe website features a user-friendly interface, showcasing products such as beds, blankets, toys, and carriers, with a mission to provide comfort and care for pets and their families.",
     demoLink: "https://e-commerce.evayan.co.uk/",
-    icons: ['wordpress', 'woocommerce', 'adobe', 'figma']
+    icons: ['wordpress', 'adobe', 'figma']
+  },
+  {
+    id: 6,
+    image: Work6,
+    title: "Yoya Beauty",
+    category: ["web design"],
+    description: "My Role: Designed and developed the Yoya Beauty website from scratch using WordPress, including all UI/UX graphics and logo design.\n This project features a modern layout with smooth transitions, making it one of my favorite client projects.\n\nDescription: Yoya Beauty is a luxury salon seeking to enhance its online presence and market its premium services.\nThe website combines sleek design with user-friendly navigation to effectively showcase the salon's offerings and brand. ",
+    demoLink: "https://yoyabeauty.com/",
+    icons: ['wordpress', 'adobe', 'figma']
   },
 ];
 
